@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "group": "anvil_fix_chipped",
+    "ingredients": [
+        "minecraft:damaged_anvil",
+        "minecraft:damaged_anvil"
+    ],
+    "result": {
+        "id": "minecraft:chipped_anvil",
+        "count": 1
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_anvil": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:anvil"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe_1": {
+            "conditions": {
+                "recipe": "lqs_recipes:chipped_anvil_from_2_damaged_anvils"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_the_recipe_2": {
+            "conditions": {
+                "recipe": "lqs_recipes:chipped_anvil_from_damaged_block"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        }
+    },
+    "requirements": [
+        [
+            "has_the_recipe_1",
+            "has_the_recipe_2",
+            "has_anvil"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "lqs_recipes:chipped_anvil_from_2_damaged_anvils",
+            "lqs_recipes:chipped_anvil_from_damaged_block"
+        ]
+    }
+}
